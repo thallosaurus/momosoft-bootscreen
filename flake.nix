@@ -10,11 +10,11 @@
       src = ./theme;
 
 #      dontUnpack = true;
-      phases = [ "installPhase" ];
+#      phases = [ "installPhase" ];
       
-      installPhase = ''
+      unpackPhase = ''
         mkdir -p $out/share/plymouth/themes/momosoft
-        cp -r $out/. $out/share/plymouth/themes/momosoft
+        cp -r $src/. $out/share/plymouth/themes/momosoft
       '';
     };
   };
