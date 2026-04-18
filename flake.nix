@@ -15,6 +15,9 @@
       unpackPhase = ''
         mkdir -p $out/share/plymouth/themes/momosoft
         cp -r $src/. $out/share/plymouth/themes/momosoft
+        chmod +x $out/share/plymouth/themes/momosoft/momosoft.plymouth
+        chmod +x $out/share/plymouth/themes/momosoft/momosoft.script
+        sed -i "s@\/usr\/@$out\/@" momosoft/momosoft.plymouth
       '';
     };
   };
