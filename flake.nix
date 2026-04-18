@@ -9,11 +9,12 @@
       name = "plymouth-momosoft";
       src = ./theme;
 
-      dontUnpack = true;
+#      dontUnpack = true;
+      phases = [ "installPhase" ];
       
       installPhase = ''
         mkdir -p $out/share/plymouth/themes/momosoft
-        cp -r $src/. $out/share/plymouth/themes/momosoft
+        cp -r $out/. $out/share/plymouth/themes/momosoft
       '';
     };
   };
