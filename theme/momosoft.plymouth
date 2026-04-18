@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=momosoft
+Description=my custom boot theme
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/momosoft
+ScriptFile=/usr/share/plymouth/themes/momosoft/momosoft.script
