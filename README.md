@@ -33,3 +33,6 @@ boot.plymouth = {
 ```
 
 Rebuild your system and reboot. It should now display the Momosoft Bootscreen
+
+## Credits
+This package uses parts of the [Arch Linux Gangster Edition Bootscreen](https://www.gnome-look.org/p/2226915). It basically is a modification of it
